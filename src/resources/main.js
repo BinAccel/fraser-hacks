@@ -18,6 +18,10 @@ function func()
                     console.log(data.results[0].formatted_address);
                    if($('input[name="work"]:checked').val()=="male"){
                       window.location.href = '../src/work.html';
+                     var student = {fName: document.getElementById('fName').value,   var lName: document.getElementById('lName').value, var uName: document.getElementById('uName').value, Pass: document.getElementById('Pass').value, Email: document.getElementById('Email').value};
+                    
+                   
+                  
                    }
                     else{
                       window.location.href = '../src/hire.html';
