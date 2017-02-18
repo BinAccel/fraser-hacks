@@ -5,8 +5,10 @@
     </head>
     <body>
         <script src="resoucres/load_header.js"></script>
-        <header class = "header"></header>
         <!--Header goes here-->
+        <header>
+            <div id = "header"></div>
+        </header>
         
     </body>
 </html>
