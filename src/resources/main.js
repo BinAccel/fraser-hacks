@@ -6,6 +6,20 @@ function loc()
   });
 }
 
+var location;
+function getLocation()
+{
+  if ("geolocation" in navigator){ //check geolocation available 
+	  //try to get user current location using getCurrentPosition() method
+	  navigator.geolocation.getCurrentPosition(function(position){
+			  $.getJSON("https://maps.googleapis.com/maps/api/geocode/json?latlng="+position.coords.latitude+","+ position.coords.longitude+"&key=AIzaSyBKZNpUw0X6MhSkHqrbWQSLi2OGpmR5-ms").then(function(data){
+				location = data.results[0].formatted_address;
+				console.log(location);
+			  });
+	  });
+  }
+}
+
 function func()
 {
   $.getJSON("https://api.typeform.com/v1/form/X1GyQx?key=a9c94ac5b726fcf6e52ac7f60849b223bc82dbb3").then(function(data){
