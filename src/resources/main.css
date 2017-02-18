@@ -1,1 +1,93 @@
 
+.question-same-line {
+  font-size: 20px;
+  text-align: center;
+}
+
+#rain {
+  color: blue;
+}
+
+#button {
+  text-align: center;
+}
+
+#header {
+ color: #69cbf0;
+  background: #ffffff;
+ font-size: 35px;
+  margin: 0px;
+  text-align: center;
+ padding-top: 10px;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+}
+
+body {
+  background: #fafafa;
+}
+
+#location, #start {
+  text-transform:capitalize;
+  width: 400px;
+  height: 50px;
+  margin: 0, auto;
+  border: none;
+}
+
+#clothing {
+  color: green;
+}
+
+.input-align {
+  text-align: center;
+}
+
+.button-align {
+  text-align: center;
+}
+
+.button-design{
+  height: 32px;
+  width: 120px;
+  background-color: #69cbf0;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  border-color: #69cbf0;
+  border-style: solid;
+  color: white;
+  font-size: 15px;
+}
+
+.button-design:hover {
+    -moz-transition: all .1s ease-in;
+    -o-transition: all .1s ease-in;
+    -webkit-transition: all .1s ease-in;
+    transition: all .1s ease-in;
+    background: #60b9db;
+    border-style: solid;
+    border-color: #60b9db;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+input{
+-webkit-border-radius: 50px;
+-moz-border-radius: 50px;
+border-radius: 50px;
+}
+
+html, body{
+  font-family: 'Source Sans Pro', sans-serif;
+  padding:0;
+  margin:0;
+}
+
