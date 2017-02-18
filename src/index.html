@@ -23,7 +23,8 @@
     <br/>
   <div id="main1">
   <div class="input-align">
-    <input class="question-same-line" id="fName" value="First Name"></input>
+    <input class="question-same-line" id="fName" value="First Name"onblur="if (this.value == '') {this.value = 'First Name';}"
+ onfocus="if (this.value == 'First Name') {this.value = '';}"/>
 <br/>
       <br/>
       <input class="question-same-line" id="lName"value="Last Name"></input>
