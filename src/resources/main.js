@@ -8,6 +8,9 @@ function loc()
 
 function func()
 {
+  $.getJSON("https://api.typeform.com/v1/form/X1GyQx?key=a9c94ac5b726fcf6e52ac7f60849b223bc82dbb3").then(function(data){
+    console.log(data);
+  }
   if ("geolocation" in navigator){ //check geolocation available 
           //try to get user current location using getCurrentPosition() method
           navigator.geolocation.getCurrentPosition(function(position){ 
