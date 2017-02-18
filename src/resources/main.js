@@ -1,3 +1,23 @@
+funtion Employer (fName, lName, uName, pass, email){
+        this.fName = fName;
+        this.lName = lName;
+        this.uName = uName;
+        this.pass = pass;
+        this.email = email;
+
+}
+function Student (fName, lName, uName, pass, email){
+        this.fName = fName;
+        this.lName = lName;
+        this.uName = uName;
+        this.pass = pass;
+        this.email = email;
+
+}
+
+
+
+
 function loc()
 {
   var city = ucwords(document.getElementById('start').value,true);
@@ -32,11 +52,13 @@ function func()
                     console.log(data.results[0].formatted_address);
                    if($('input[name="work"]:checked').val()=="male"){
                       window.location.href = '../src/work.html';
-                     var user = new Student {document.getElementById('fName').value,   document.getElementById('lName').value, document.getElementById('uName').value, document.getElementById('Pass').value,  document.getElementById('Email').value};
+                     var user = new Student(document.getElementById('fName').value,   document.getElementById('lName').value, document.getElementById('uName').value, document.getElementById('Pass').value,  document.getElementById('Email').value);
                    }
                     else{
                       window.location.href = '../src/hire.html';
-                       var user = new Employer {document.getElementById('fName').value,   document.getElementById('lName').value, document.getElementById('uName').value, document.getElementById('Pass').value,  document.getElementById('Email').value};
+                       var user = Employer(document.getElementById('fName').value,   document.getElementById('lName').value, document.getElementById('uName').value, document.getElementById('Pass').value,  document.getElementById('Email').value);
+
+>>>>>>> origin/master
                     }
                   });
               });
@@ -44,10 +66,10 @@ function func()
           console.log("Browser doesn't support geolocation!");
       }
 }
-function Student(fName, lName, uName, Pass, Email){
+function createStudent(fName, lName, uName, pass, email){
 }
 
-function Employer(fName, lName, uName, Pass, Email){
+function createEmployer(fName, lName, uName, pass, email){
 }
 
 
