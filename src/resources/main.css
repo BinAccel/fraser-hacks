@@ -14,35 +14,9 @@
   text-align: center;
 }
 
-#header {
- color: #69cbf0;
-  background: #ffffff;
- font-size: 35px;
-  margin: 0px;
-  text-align: center;
- padding-top: 10px;
-  height: 60px;
-  width: 100%;
-  position: fixed;
-}
-
-#headercenter {
- color: #FFFFFF;
-  background: #ffffff;
- font-size: 30px;
-  margin: 0px;
-  text-align: center;
- padding-top: 10px;
-  height: 60px;
-  width: 100%;
-  position: fixed;
-  font-weight: bold;
-}
-
-
 body {
   background: #fafafa;
-  font-family: 
+  font-family:
 }
 
 #location, #start {
@@ -108,4 +82,3 @@ html, body{
   margin:0;
   background-image: url("Screen Shot 2017-02-18 at 12.20.58 PM.png");
 }
-
