@@ -13,13 +13,17 @@
  color: #69cbf0 !important;
   background: #fff;
  font-size: 35px;
-  margin: 0px;
   text-align: center;
  padding-top: 10px;
   height: 60px;
   width: 100%;
   position: fixed;
-  margin-top: -50px;
+  margin-top: -52px;
+}
+
+#header {
+  background: #eee;
+  border-bottom: 1px solid #aaa;
 }
 
 #headercenter {

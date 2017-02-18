@@ -1,3 +1,7 @@
+html {
+  min-height:100%;
+  position: relative;
+}
 
 .question-same-line {
   font-size: 20px;
@@ -6,13 +10,18 @@
 }
 
 #content {
+  height:100vh;
   margin: auto;
   margin-top: 52px;
   display: block;
-  height: 100%;
   max-width: 70%;
-  background-color: #FFF;
   border: none;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  overflow:hidden;
+  z-index:-1;
 }
 
 #button {
@@ -20,8 +29,9 @@
 }
 
 body {
+  height: 100%;
   background: #fafafa;
-  font-family:
+  font-family:;
 }
 
 #location, #start {
