@@ -2,7 +2,7 @@
   color: #69cbf0 !important;
   text-decoration: none;
     float:left;
-    padding-left:50px
+    margin-left:50px
 }
 
 #title a:hover {
@@ -11,7 +11,7 @@
 
 #header {
  color: #69cbf0 !important;
-  background: #ffffff;
+  background: #fff;
  font-size: 35px;
   margin: 0px;
   text-align: center;
