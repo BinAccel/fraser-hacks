@@ -13,7 +13,7 @@ function func()
           navigator.geolocation.getCurrentPosition(function(position){ 
                   $.getJSON("https://maps.googleapis.com/maps/api/geocode/json?latlng="+position.coords.latitude+","+ position.coords.longitude+"&key=AIzaSyBKZNpUw0X6MhSkHqrbWQSLi2OGpmR5-ms").then(function(data){
                     console.log(data.results[0].formatted_address);
-                   if($('input[name="genderS"]:checked').val()=="male"){
+                   if($('input[name="work"]:checked').val()=="male"){
                       window.location.href = '../src/work.html';
                    }
                     else{
