@@ -2,7 +2,7 @@ function func()
 {
   var city = ucwords(document.getElementById('start').value,true);
   $.getJSON("https://maps.googleapis.com/maps/api/geocode/json?address="+city+"&key=AIzaSyBKZNpUw0X6MhSkHqrbWQSLi2OGpmR5-ms").then(function(data){
-    console.log(data[0]);
+    console.log(data);
   });
 }
 
