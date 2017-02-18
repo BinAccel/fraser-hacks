@@ -10,8 +10,13 @@ html {
   border: none;
 }
 
+h1 hr {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
 #content {
-  height:100vh;
+  /*height:100vh;*/
   margin: auto;
   margin-top: 52px;
   display: block;
