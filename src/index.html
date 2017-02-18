@@ -9,7 +9,7 @@
     <script src="resources/main.js"></script>
 <header>
   <div id='header'>
-  <span style = "float:left;padding-left:50px">SLance</span>
+  <span style = "float:left;padding-left:50px">S-Lance</span>
   <a href="login.php">
         <img src = "resources/login.jpg" style = "max-height:40px;float:right">
       </a>
@@ -22,15 +22,21 @@
     <br/>
   <div id="main1">
   <div class="input-align">
-    <input class="question-same-line" id="fName" value="First Name"></input>
+    <input class="question-same-line" id="fName" onblur="if (this.value == '') {this.value = 'First Name';}"
+ onfocus="if (this.value == 'First Name') {this.value = '';}" default = 'First Name'></input>
+<br/>
       <br/>
-      <input class="question-same-line" id="lName"value="Last Name"></input>
+      <input class="question-same-line" id="lName"onblur="if (this.value == '') {this.value = 'Last Name';}"
+ onfocus="if (this.value == 'Last Name') {this.value = '';}"></input>
+<br/>
       <br/>
-      <input class="question-same-line" id="uName"value="Userame"></input>
+      <input class="question-same-line" id="uName" hint="Userame"></input>
+<br/>
     <br/>
-    <input class="question-same-line" id="Pass"value="Password"></input> 
+    <input class="question-same-line" id="Pass"hint="Password"></input> 
+<br/>
   <br/>
-<input class="question-same-line" id="Email" value="Email"></input>
+<input class="question-same-line" id="Email" hint="Email"></input>
   <br/>
 
   </div>
