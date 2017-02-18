@@ -41,6 +41,25 @@ function Student(fName, lName, uName, Pass, Email){
 function Employer(fName, lName, uName, Pass, Email){
 }
 
+
+
+function signUp()
+{
+	var fName = document.getElementById('fName').value
+	var lName = document.getElementById('lName').value
+	var uName = document.getElementById('uName').value
+	var Pass = document.getElementById('Pass').value
+	var Email = document.getElementById('Email').value
+	var Work;
+	if($('input[name="work"]:checked').val()=="male"){
+		Work = true;
+	}
+	else{Work = false;}
+	getLocation();
+	var obj = {"first_name":fName,"last_name":lName,"user_name":uName,"password":Pass,"email":Email,"work":Work,"location":location};
+	$.post(url,obj,function(){});
+}
+
 //http://stackoverflow.com/questions/2017456/with-jquery-how-do-i-capitalize-the-first-letter-of-a-text-field-while-the-user
 function ucwords(str,force){
   str=force ? str.toLowerCase() : str;  
