@@ -2,6 +2,16 @@
 .question-same-line {
   font-size: 20px;
   text-align: center;
+  overflow-x: scroll;
+}
+
+#content {
+  margin: auto;
+  margin-top: 52px;
+  display: block;
+  height: 100%;
+  max-width: 70%;
+  background-color: #FFF;
 }
 
 #button {
