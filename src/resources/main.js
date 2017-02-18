@@ -18,13 +18,15 @@ function func()
                     console.log(data.results[0].formatted_address);
                    if($('input[name="work"]:checked').val()=="male"){
                       window.location.href = '../src/work.html';
-                     var student = {fName: document.getElementById('fName').value,   var lName: document.getElementById('lName').value, var uName: document.getElementById('uName').value, Pass: document.getElementById('Pass').value, Email: document.getElementById('Email').value};
+                     var user = new Student {document.getElementById('fName').value,   document.getElementById('lName').value, document.getElementById('uName').value, document.getElementById('Pass').value,  document.getElementById('Email').value};
                     
                    
                   
                    }
                     else{
                       window.location.href = '../src/hire.html';
+                       var user = new Employer {document.getElementById('fName').value,   document.getElementById('lName').value, document.getElementById('uName').value, document.getElementById('Pass').value,  document.getElementById('Email').value};
+                    
                     }
                     
                   });
@@ -32,6 +34,11 @@ function func()
       }else{
           console.log("Browser doesn't support geolocation!");
       }
+}
+function Student(fName, lName, uName, Pass, Email){
+}
+
+function Employer(fName, lName, uName, Pass, Email){
 }
 
 //http://stackoverflow.com/questions/2017456/with-jquery-how-do-i-capitalize-the-first-letter-of-a-text-field-while-the-user
