@@ -3,7 +3,7 @@ function func()
   var city = ucwords(document.getElementById('location').value,true);
   $.getJSON("https://maps.googleapis.com/maps/api/geocode/json?address="+city+"&key=AIzaSyBKZNpUw0X6MhSkHqrbWQSLi2OGpmR5-ms").then(function(data){
     console.log(data);
-  }
+  });
 }
 
 //http://stackoverflow.com/questions/2017456/with-jquery-how-do-i-capitalize-the-first-letter-of-a-text-field-while-the-user
