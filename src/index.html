@@ -23,13 +23,15 @@
     <br/>
   <div id="main1">
   <div class="input-align">
-    <input class="question-same-line" id="fName" hint="First Name"></input>
+    <input class="question-same-line" id="fName" onblur="if (this.value == '') {this.value = 'First Name';}"
+ onfocus="if (this.value == 'First Name') {this.value = '';}"></input>
 <br/>
       <br/>
-      <input class="question-same-line" id="lName"hint="Last Name"></input>
+      <input class="question-same-line" id="lName"onblur="if (this.value == '') {this.value = 'Last Name';}"
+ onfocus="if (this.value == 'Last Name') {this.value = '';}"></input>
 <br/>
       <br/>
-      <input class="question-same-line" id="uName"hint="Userame"></input>
+      <input class="question-same-line" id="uName" hint="Userame"></input>
 <br/>
     <br/>
     <input class="question-same-line" id="Pass"hint="Password"></input> 
