@@ -57,8 +57,6 @@ function func()
                     else{
                       window.location.href = '../src/hire.html';
                        var user = Employer(document.getElementById('fName').value,   document.getElementById('lName').value, document.getElementById('uName').value, document.getElementById('Pass').value,  document.getElementById('Email').value);
-
->>>>>>> origin/master
                     }
                   });
               });
