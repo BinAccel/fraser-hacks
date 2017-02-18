@@ -1,4 +1,4 @@
-funtion Employer (fName, lName, uName, pass, email){
+function Employer (fName, lName, uName, pass, email){
         this.fName = fName;
         this.lName = lName;
         this.uName = uName;
