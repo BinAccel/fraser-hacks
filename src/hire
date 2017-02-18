@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="resources/main.css">
+    <link rel="stylesheet" type="text/css" href="resources/reset.css">
+    <link rel="stylesheet" type="text/css" href="resources/header.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="resources/load_header.js"></script>
+    <title>SLance</title>
+  </head>
+    <body>
+    <script src="resources/main.js"></script>
+<header>
+  <div id='header'></div>
+</header>
+<br/>
+<br/>
+<br/>
+<br/>
+    <br/>
+  <div id="main1">
+  <div class="input-align">
+    <input class="question-same-line" id="fName" placeholder = 'First Name'></input>
+<br/>
+      <br/>
+      <input class="question-same-line" id="lName" placeholder = 'Last Name'></input>
+<br/>
+      <br/>
+      <input class="question-same-line" id="uName" placeholder="Username" ></input>
+<br/>
+    <br/>
+    <input class="question-same-line" id="Pass"placeholder="Password"type='password'></input>
+<br/>
+  <br/>
+<input class="question-same-line" id="Email" placeholder="Email"></input>
+  <br/>
+  <input type="radio" name="work" value="male"> I need work &nbsp;
+  <input type="radio" name="work" value="female"> I have work
+
+  </div>
+  <br />
+  <div class="button-align">
+    <button onclick="func()" class="button-design" id="button-start">Next</button>
+  </div>
+  </div>
+    <script src="resources/main.js"></script>
+  </body>
+</html>
