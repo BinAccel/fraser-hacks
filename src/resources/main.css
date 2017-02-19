@@ -4,8 +4,8 @@ html {
 }
 
 img.resize{
-   max-width:400%;
-   max-height:400%;
+   width:width*2;
+   height:height*2;
 }
 
 .question-same-line {
