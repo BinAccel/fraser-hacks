@@ -3,6 +3,11 @@ html {
   position: relative;
 }
 
+img.resize{
+   max-width:50%;
+   max-height:50%;
+}
+
 .question-same-line {
   font-size: 20px;
   text-align: center;
